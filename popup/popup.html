@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatFocus</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="popup-container">
+    <h1>ChatFocus</h1>
+    <div id="focused-contacts">
+      <h2>Focused Contacts</h2>
+      <ul id="focused-contacts-list"></ul>
+      <input type="text" id="add-contact-input" placeholder="Add contact">
+      <button id="add-contact-btn">Add</button>
+    </div>
+    <div id="filter-settings">
+      <h2>Filter Settings</h2>
+      <label>
+        <input type="checkbox" id="ignore-forwarded"> Ignore forwarded messages
+      </label>
+      <label>
+        <input type="checkbox" id="include-mentions"> Include mentions
+      </label>
+    </div>
+    <button id="export-btn">Export Conversations</button>
+    <button id="feedback-btn">Send Feedback</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

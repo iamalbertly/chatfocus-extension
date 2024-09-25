@@ -1,0 +1,59 @@
+#chat-focus-ui {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: #f0f0f0;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+#chat-focus-ui.minimized {
+  transform: translateX(290px);
+}
+
+#chat-focus-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #075e54;
+  color: white;
+}
+
+#chat-focus-minimize {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#chat-focus-content {
+  padding: 10px;
+}
+
+#focused-contacts, #group-filter {
+  margin-bottom: 20px;
+}
+
+#focused-contacts-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#group-filter-input {
+  width: 70%;
+  margin-right: 5px;
+}
+
+#apply-filter {
+  cursor: pointer;
+}
+
+/* Styles for highlighted and dimmed messages */
+.message-in, .message-out {
+  transition: opacity 0.3s ease-in-out;
+}
